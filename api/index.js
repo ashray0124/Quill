@@ -11,10 +11,7 @@ import multer from 'multer'
 const app = express()
 dotenv.config()
 
-app.use(cors({
-    origin: "https://ashutoshquill.netlify.app",
-    credentials: true
-}))
+
 app.use(cookieParser())
 app.set("trust proxy", 1)
 app.use(bodyParser.json({ limit: "30mb" }))
